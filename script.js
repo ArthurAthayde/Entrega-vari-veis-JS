@@ -54,11 +54,17 @@ let texto = prompt("Escreva uma palavra ou frase.");
 let tamanho = texto.length;
 alert(`Este texto possui ${texto.length} caracteres.`);
 
-
 // Exercício 9: Primeira e última letra 
 
 let texto2 = prompt("Escreva uma palavra ou frase.");
 let primeira = texto2[0];
-let ultima = texto2[-1];
-alert(`A primeira letra deste texto é ${primeira} e última é ${ultima}.`);
+let ultima = texto2.substring(texto2.length-1, texto2.length);
+alert(`A primeira letra deste texto é ${primeira.toUpperCase()} e última é ${ultima.toLowerCase()}.`);
 
+// Exercício 10: Crachá de funcionário
+
+let nome = prompt("Nome:");
+let sobrenome = prompt ("Sobrenome:");
+let idade = parseInt(prompt("Qual sua idade?"));
+let setor = prompt("Em qual setor você trabalha?");
+alert(`Nome: ${nome.toUpperCase()} ${sobrenome.toUpperCase()} - Idade: ${idade} anos - Setor: ${setor}.`);
